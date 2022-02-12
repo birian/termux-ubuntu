@@ -1,5 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
-folder=ubuntu-fs
+folder=ubuntu
 if [ -d "$folder" ]; then
 	first=1
 	echo "skipping downloading"
@@ -34,7 +34,7 @@ if [ "$first" != 1 ];then
 	cd "$cur"
 fi
 mkdir -p binds
-bin=start-ubuntu.sh
+bin=startu.sh
 echo "writing launch script"
 cat > $bin <<- EOM
 #!/bin/bash
